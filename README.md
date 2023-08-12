@@ -1,2 +1,2 @@
 # Corporate-website
- Nextjs, TypeScript
+ Nextjs, TypeScript, Tailwind
