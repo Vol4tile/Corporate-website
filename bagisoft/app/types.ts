@@ -1,4 +1,3 @@
-
 export type Feature = string;
 
 export interface Plan {

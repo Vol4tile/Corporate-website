@@ -1,12 +1,12 @@
 "use client"
-
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+
 interface FAQSProps {
   question: string;
   answer: string;
-
 }
+
 const FaqItem = ({ question, answer }: FAQSProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -50,21 +50,17 @@ export default function FAQS() {
       question: 'Üst pakete geçişler nasıl oluyor?',
       answer: 'Aynı tasarım üzerinden teknolojik gelişmeler yapılıyor ve satın alınan yeni paket %30 indirimli bir şekilde sizin hizmetinize sunuluyor.',
     },
-    // Diğer soru ve cevapları buraya ekleyin
   ];
 
   return (
-    <div className="flex justify-center h-72  p-5  rounded-md">
+    <div className="flex justify-center min-h-72  p-5  rounded-md">
       <div className="w-1/2">
-        {/* SVG Bölümü */}
         <div className="h-full flex items-center justify-center">
-          {/* SVG kodunuzu buraya yerleştirin */}
           <img src="/faqs.svg" alt="" className='w-full h-full' />
         </div>
       </div>
       <div className="w-1/2">
-        {/* Sıkça Sorulan Sorular Bölümü */}
-        <div className="w-full mx-auto">
+        <div className="w-full mx-auto h-auto">
           <h1 className='text-lg text-sky-500 p-3 font-secondFont'>Sıkça Sorulan Sorular </h1>
           {faqData.map((faq, index) => (
             <FaqItem key={index} question={faq.question} answer={faq.answer} />

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const FeatureTable = () => {
+
   const features = [
     {
       name: 'Çeşitli Şablonlar',
@@ -37,14 +38,14 @@ const FeatureTable = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="w-full max-w-2xl p-8">
+    <div className="flex justify-center items-center h-screen ">
+      <div className="w-full max-w-2xl p-8  ">
         <h1 className="text-2xl font-bold mb-4">Website Oluşturma Özellikleri</h1>
-        <table className="w-full border">
-          <thead className="bg-sky-200">
-            <tr>
-              <th className="py-2 px-4 border">Özellik</th>
-              <th className="py-2 px-4 border">Açıklama</th>
+        <table className="w-full  p-6 rounded-xl bg-white overflow-hidden  shadow-xl shadow-gray-400">
+          <thead >
+            <tr >
+              <th className="py-2 px-4">Özellik</th>
+              <th className="py-2 px-4">Açıklama</th>
             </tr>
           </thead>
           <tbody>

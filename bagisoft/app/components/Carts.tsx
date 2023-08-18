@@ -12,7 +12,6 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
-
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -22,8 +21,6 @@ ChartJS.register(
     Tooltip,
     Legend
 );
-
-
 
 const options = {
     responsive: true,
@@ -36,7 +33,8 @@ const options = {
             text: 'Aylık organik trafik artışı',
         },
     },
-}; const data = {
+};
+const data = {
     labels: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran'],
     datasets: [
         {
@@ -48,9 +46,10 @@ const options = {
         },
     ],
 };
+
 const ChartPage = () => {
     return (
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center p-6'>
             <h2 className='text-lg text-sky-500 font-secondFont'>İyi bir SEO Optimizasyonunun 6 ay içinde kazandırabilecekleri </h2>
             <h1></h1>
             <Line data={data} options={options} />

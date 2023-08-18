@@ -1,7 +1,7 @@
 import Link from 'next/link'
-
 import Image from 'next/image';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 mt-4">
@@ -13,14 +13,11 @@ const Footer = () => {
           >
             <h2 className="text-lg font-semibold mb-4 flex items-center">
               <Image className="w-8 h-8 object-cover mt-1" src="/bagisoftnobacklogo.png" width={100} height={100} alt="logoImg" />
-
               <span className="text-indigo-500">Bagi</span><span className="text-sky-500">soft</span>
             </h2></Link>
-
             <p className="text-sm mb-2">İstanbul, Türkiye</p>
             <p className="text-sm mb-2">Email: mail@mail.com</p>
             <p className="text-sm mb-2">Phone: +0 (000) 000-0000</p>
-
           </div>
           <div>
             <h2 className="text-lg font-semibold mb-4">Bağlantılar</h2>

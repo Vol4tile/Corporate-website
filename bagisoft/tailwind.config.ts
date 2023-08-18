@@ -7,7 +7,7 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend:{
+    extend: {
       fontFamily: {
         firstFont: ["Lato", "sans-serif"],
         secondFont: ["Poppins", "sans-serif"],

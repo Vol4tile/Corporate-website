@@ -1,4 +1,5 @@
 import { Plan } from './types';
+
 export const plans: Plan[] = [
   {
     title: 'Freelancer',

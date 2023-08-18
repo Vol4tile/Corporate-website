@@ -1,12 +1,9 @@
-
-
 import Pricing from './components/Pricing'
 import Banner from './components/Banner'
 import Team from './components/Team'
 import FAQS from './components/FAQS'
 import AboutUs from './components/AboutUs'
 import Carts from './components/Carts'
-
 
 export default function Home() {
 
@@ -22,9 +19,10 @@ export default function Home() {
     img: "/we.svg",
     id: 1
   }
+
   return (
     <main className=" min-h-screen flex flex-col items-center ">
-      <div className='w-[1200px] flex flex-col gap-16 '>
+      <div className='w-[1200px] max-w-full flex flex-col gap-16 '>
         <Banner />
         <Pricing />
         <Team />
@@ -32,7 +30,6 @@ export default function Home() {
         <AboutUs {...firstAboutParam} />
         <AboutUs {...secondAboutParam} />
         <FAQS /></div>
-
     </main>
   )
 }

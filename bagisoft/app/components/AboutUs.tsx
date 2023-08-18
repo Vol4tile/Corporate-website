@@ -1,12 +1,13 @@
 import React from 'react';
+
 interface AboutUsProps {
   title: string;
   description: string;
   img: string;
   id: number
 }
-const AboutUs = ({ title, description, img, id }: AboutUsProps) => {
 
+const AboutUs = ({ title, description, img, id }: AboutUsProps) => {
   return (
     <div className="flex">
       <div className={`w-1/2 flex items-center justify-center p-8 ${id && id === 1 ? 'order-1' : 'order-2'}`}>
@@ -17,15 +18,13 @@ const AboutUs = ({ title, description, img, id }: AboutUsProps) => {
           </p>
         </div>
       </div>
-      <div className={`w-1/2 ${id && id === 1 ? 'order-2' : 'order-1'}`}>
+      <div className={`w-1/2 ${id && id === 1 ? 'order-2' : 'order-1'} flex justify-center items-center `}>
         {img && <img
           src={img}
           alt="Background"
           className="w-full h-auto"
         />}
-
       </div>
-
     </div>
   );
 };

@@ -1,9 +1,11 @@
 import React from 'react';
+
 interface EmployeeCardProps {
   name: string;
   title: string;
   imageUrl: string;
 }
+
 const EmployeeCard = ({ name, title, imageUrl }: EmployeeCardProps) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-10">
