@@ -1,6 +1,9 @@
 # Corporate-website
  Nextjs, TypeScript, Tailwind
-
+```bash
+cd bagisoft
+npm run dev
+```
  ![1](https://github.com/Vol4tile/Corporate-website/assets/104697209/67866fa0-a081-407a-af02-3b9abcd6111b)
 ![2](https://github.com/Vol4tile/Corporate-website/assets/104697209/688abad3-a2dd-4f48-84c7-48aa2a2d9a98)
 ![3](https://github.com/Vol4tile/Corporate-website/assets/104697209/ca7586da-2db1-47e8-b9e6-23f0707cf224)
